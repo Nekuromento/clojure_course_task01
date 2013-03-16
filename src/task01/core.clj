@@ -16,9 +16,6 @@
   (let [data (parse "clojure_google.html")]
     (loop [links []
            elements (list data)]
-      ; (println links)
-      ; (println (map tag elements))
-      ; (println "---")
       (if (empty? elements)
         links
         (let [element (first elements)]
